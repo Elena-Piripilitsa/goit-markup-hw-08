@@ -1,18 +1,32 @@
 .feature .container{
-    padding: 94px 0 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .feature-title{
     @extend %title;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .icon-feature-list{
-    display: inline-block;
-    width: 270px;
-    height: 120px;
+    display: block;
+    height: 120px;  
+
+    width: 100%;  
     padding-left: 100px; 
     padding-right: 100px; 
-    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 0 30px;
     border-radius: 4px;
 
     background: $accessorial-background-color;
@@ -25,15 +39,36 @@
 }
 
 .feature-list{
-    display: flex;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .feature-list-item{
-    width: calc((100%-3*30)/4);
+    margin: 0 0 30px;
 
-    &:not(:last-child){
-        margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 1*30px)/2);
+
+        &:nth-child(2n+1){
+            margin-right: 30px;
+        }
+        &:nth-last-child(-n + 2){
+            margin-bottom: 0;
+        }
+    }
+  
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+
+        width: calc((100% - 3*30px)/4);
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
     }
 }

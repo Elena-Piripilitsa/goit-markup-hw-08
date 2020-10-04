@@ -1,24 +1,38 @@
 .section-clients{
-    padding: 94px 0;   
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     }
     
 .client-list{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
 .client-list .client-item{
-    &:not(:last-child){
-        margin-right: 30px;
+    margin: 15px;
+    width: calc((100% - 4*15px)/2);
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6*15px)/3); 
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 12*15px)/6); 
     }
 }
-
+    
 .client-card{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 90px;
+
     border: 1px solid $background-icon;
     border-radius: 4px;
 
@@ -40,4 +54,3 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-

@@ -2,7 +2,7 @@ html{
     box-sizing: border-box;
 }
 
-*
+*,
 *::after,
 *::before{
     box-sizing: inherit;
@@ -28,6 +28,15 @@ button,
     cursor: pointer;
 }
 
+.button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+    background-color: $accent-color;
+}
+
 .list{
     padding: 0;
     margin: 0;
@@ -36,27 +45,48 @@ button,
 
 .link{
     text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+    }
 }
 
 .container{
-    width: 1200px;
+    width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
     padding-right: 15px;
-}
 
-.page-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
 }
 
 .section-title{
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    margin: 0 0 30px;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 0 50px;
+
+        font-size: 36px;
+    }
 }
 
 .subtitle{

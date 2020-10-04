@@ -1,10 +1,12 @@
+.container.service{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
 .service-list{
     display: flex;
     margin-bottom: 94px;
-}
-
-.section-title{
-    margin: 0 0 50px;
 }
 
 .service-item-title{
