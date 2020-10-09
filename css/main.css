@@ -1125,7 +1125,7 @@ button,
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscription .mail:hover, .subscription .mail:focus {
+.subscription .mail:hover, .subscription .mail:active, .subscription .mail:focus {
   border: 1px solid #2196f3;
 }
 
