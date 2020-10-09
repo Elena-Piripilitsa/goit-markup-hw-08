@@ -1052,12 +1052,22 @@ button,
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-auth-nav-item {
+.footer-auth-nav-item:first-child {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-auth-nav-item:first-child {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-auth-nav {
   margin-top: 8px;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-auth-nav-item {
+  .footer-auth-nav {
     margin-top: 9px;
   }
 }
