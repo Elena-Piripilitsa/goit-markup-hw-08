@@ -63,14 +63,6 @@ button,
   list-style: none;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.link:hover, .link:focus, .link:active {
-  color: #2196f3;
-}
-
 .container {
   width: 100%;
   margin-left: auto;
@@ -374,6 +366,14 @@ button,
   fill: currentColor;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.link:hover, .link:focus, .link:active {
+  color: #2196f3;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -383,7 +383,6 @@ button,
   margin-left: auto;
   margin-right: auto;
   height: 400px;
-  min-width: 480px;
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   background-repeat: no-repeat;

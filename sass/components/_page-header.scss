@@ -224,3 +224,13 @@
 
     fill: currentColor;
 }
+
+.link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+    }
+}
