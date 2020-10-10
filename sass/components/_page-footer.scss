@@ -130,6 +130,7 @@
     &:active,
     &:focus{
         border: 1px solid $accent-color;
+        outline: none;
     }
 
     &::placeholder{

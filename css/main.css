@@ -565,6 +565,7 @@ button,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .form-field {
@@ -670,7 +671,7 @@ button,
 
 .icon-check {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 8px;
   border: 2px solid #212121;
@@ -1137,6 +1138,7 @@ button,
 
 .subscription .mail:hover, .subscription .mail:active, .subscription .mail:focus {
   border: 1px solid #2196f3;
+  outline: none;
 }
 
 .subscription .mail::placeholder {

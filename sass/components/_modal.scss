@@ -110,6 +110,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
 }
 
 .form-field{
@@ -226,7 +228,7 @@
 
 .icon-check{
     display: inline-block;
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     margin-right: 8px;
 
